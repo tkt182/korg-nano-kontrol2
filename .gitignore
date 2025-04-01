@@ -5,4 +5,9 @@ node_modules
 *.log
 tmp
 lib
-samples/webmidi/dist/bundle.js
+samples/browser/dist/bundle.js
+samples/browser/dist/bundle.js.map
+samples/node/bundle.cjs
+samples/node/bundle.cjs.map
+samples/node/bundle.js
+samples/node/bundle.js.map
