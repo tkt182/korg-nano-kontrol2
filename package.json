@@ -19,15 +19,15 @@
   "scripts": {
     "build:ts": "tsc",
     "build:rollup": "rollup -c",
-    "build": "npm run clean && npm run typecheck && npm run build:ts && npm run build:rollup",
-    "buildSample": "npm run typecheckSample && npm run build:ts && rollup -c samples/browser/rollup.config.js && rollup -c samples/node/rollup.config.js",
+    "build": "pnpm run clean && pnpm run typecheck && pnpm run build:ts && pnpm run build:rollup",
+    "buildSample": "pnpm run typecheckSample && pnpm run build:ts && rollup -c samples/browser/rollup.config.js && rollup -c samples/node/rollup.config.js",
     "clean": "rm -rf lib",
     "format": "prettier --check src/*.ts src/**/*.ts test/*.ts",
     "format:fix": "prettier --write src/*.ts src/**/*.ts test/*.ts",
     "lint": "eslint src/*.ts src/**/*.ts test/*.ts",
     "lint:fix": "eslint src/*.ts src/**/*.ts test/*.ts --fix",
-    "mocha": "npm run build && mocha --require tsx \"test/*.ts\"",
-    "test": "npm run lint && npm run format && npm run mocha",
+    "mocha": "pnpm run build && mocha --require tsx \"test/*.ts\"",
+    "test": "pnpm run lint && pnpm run format && pnpm run mocha",
     "typecheck": "tsc -p tsconfig.json && tsc -p test/tsconfig.json",
     "typecheckSample": "tsc -p samples/browser/tsconfig.json && tsc -p samples/node/tsconfig.json",
     "watch": "tsc -w"
@@ -39,6 +39,15 @@
   ],
   "author": "Shinichiro Takata <7912032+tkt182@users.noreply.github.com>",
   "license": "MIT",
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.27.0",
     "@babel/core": "^7.26.10",

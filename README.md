@@ -101,16 +101,16 @@ localStorage.debug = "korg-nano-kontrol2:*";
 ## Build
 
 ```bash
-% npm run build
-% npm run buildSample
+% pnpm run build
+% pnpm run buildSample
 
-% npm run watch
+% pnpm run watch
 ```
 
 ## Test
 
 ```bash
-% npm install
+% pnpm install
 
-% npm test
+% pnpm test
 ```
