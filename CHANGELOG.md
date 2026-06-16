@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.1] - 2026-06-16
+
+* updated dependencies and migrated from npm to pnpm
+* updated to Node.js 24
+* fixed `files` entry in package.json to include `CHANGELOG.md`
+
 ## [0.3.0] - 2025-05-15
 
 * added TypeScript definitions  
