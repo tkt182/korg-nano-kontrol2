@@ -1,6 +1,6 @@
 {
   "name": "korg-nano-kontrol2",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Node.js/Browser library for KORG nanoKONTROL and nanoKONTROL2",
   "type": "module",
   "main": "lib/korg-nano-kontrol2.cjs",
